@@ -50,18 +50,26 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
+  text:{
+    fontSize: 18,
+    color: colors.col1,
+    textAlign: 'center',
+    width:'80%',
+  },
   btnout:{
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '80%',
-    height: '30%',
+    flexDirection : 'row',
   },
   btn:{
     fontSize: 20,
-    fontWeight: 'bold',
-    color: colors.col1,
+    fontWeight: '700',
+    color: colors.text1,
     textAlign: 'center',
-    marginVertical : 10,
+    marginVertical : 30,
+    marginHorizontal : 10,
+    backgroundColor : '#fff',
+    borderRadius : 10,
+    padding : 10,
+    paddingHorizontal : 20,
   }
 
 })
