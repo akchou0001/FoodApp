@@ -1,12 +1,12 @@
 import React from 'react'
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native'
 import logo from '../../../assets/logo.png';
-import {colors, hr80} from '../../globals/style';
+import {colors, hr80, btn1} from '../../globals/style';
 
 const WelcomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>WelcomeScreen</Text>
+      <Text style={styles.title}> Zigato </Text>
       <View style={styles.logoout}>
         <Image source={logo} style={styles.logo}/>
       </View>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     fontWeight: '200',
     color: colors.col1,
     textAlign: 'center',
-    marginVertical : 10,
+    marginVertical : 30,
   },
   logoout:{
     alignItems: 'center',
@@ -49,6 +49,19 @@ const styles = StyleSheet.create({
   logo:{
     width: '100%',
     height: '100%',
+  },
+  btnout:{
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '80%',
+    height: '30%',
+  },
+  btn:{
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: colors.col1,
+    textAlign: 'center',
+    marginVertical : 10,
   }
 
 })
